@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+.content {
+    position: relative;
+    max-width: 748px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.content .box {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.content ul {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    left: 0;
+}
+
+.pic {
+    width: 748px;
+    display: block;
+}
+
+.pic:not(.show) {
+    display: none;
+}
+
+.btn-arrow {
+    position: absolute;
+    top: 170px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-arrow::before {
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn-left {
+    left: 15px;
+}
+
+.btn-right {
+    right: 15px;
+}
+
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-row button {
+    display: block;
+    margin: 0 4px;
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: #666;
+}
+
+.btn-row button.btn-active {
+    background-color: #000;
+}
+
+.btn-row > button:hover {
+    cursor: pointer;
+    background-color: #000;
+}
