@@ -12,7 +12,6 @@ $(document).ready(function(){
     } 
     const effectImg = (newIndex, direction) => {
         let point = imgW + "px", count = 1;
-
         let i = currentIndex;
         while(i!==newIndex) {
             count = (currentIndex === noImgs -1 || currentIndex === 0) ? 1: Math.abs(currentIndex - newIndex); 
